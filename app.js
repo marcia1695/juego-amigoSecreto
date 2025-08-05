@@ -4,6 +4,9 @@ const listaAmigoSecreto = [];
 const ul_resultado = document.getElementById ("resultado");
 
 function agregarAmigo(){
+if (input_amigo.value ==""){
+    alert("Por favor, inserte un nombre");
+}
 listaAmigoSecreto.push(input_amigo.value);
 console.log(listaAmigoSecreto);
 ul_listaAmigos.innerHTML += `<li>${input_amigo.value}</li>`;
